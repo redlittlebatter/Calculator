@@ -76,16 +76,17 @@ Char_multiply = Button(root, text="*", width=2, command=lambda: inp.insert("end"
 Char_multiply.grid(row=3, sticky="n", padx=125)
 Char_divide = Button(root, text="/", width=2, command=lambda: inp.insert("end", "/"), borderwidth=3, relief=GROOVE)
 Char_divide.grid(row=4, sticky="n", padx=125)
-result = Button(root, text="=", width=11, command=result, bg="purple", fg="white", borderwidth=3)
-result.grid(row=5, sticky="w", padx=15)
 Char_modulus = Button(root, text="%", width=2, command=lambda: inp.insert("end", "%"), borderwidth=3, relief=GROOVE)
 Char_modulus.grid(row=5, sticky="n", padx=125)
+Char_exponentiation = Button(root, text="**", width=2, command=lambda: inp.insert("end", "**"), borderwidth=3,
+                             relief=GROOVE)
+Char_exponentiation.grid(row=4, sticky="w", padx=75)
+result = Button(root, text="=", width=11, command=result, bg="purple", fg="white", borderwidth=3)
+result.grid(row=5, sticky="w", padx=15)
 delete = Button(root, text="del", width=2, command=delete, bg="purple", fg="white")
 clean = Button(root, text="C", width=2, command=clear, bg="purple", fg="white")
 clean.grid(row=0, sticky="w", padx=125)
 delete.grid(row=0, sticky="w", padx=100)
-Char_exponentiation = Button(root, text="**", width=2, command=lambda: inp.insert("end", "**"), borderwidth=3,
-                             relief=GROOVE)
-Char_exponentiation.grid(row=4, sticky="w", padx=75)
+
 
 root.mainloop()
