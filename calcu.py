@@ -58,8 +58,6 @@ Char_five = Button(root, text="5", width=2, command=lambda: inp.insert("end", "5
 Char_five.grid(row=2, sticky="w", padx=45)
 Char_four = Button(root, text="4", width=2, command=lambda: inp.insert("end", "4"), borderwidth=3, relief=GROOVE)
 Char_four.grid(row=2, sticky="w", padx=75)
-Char_minus = Button(root, text="-", width=2, command=lambda: inp.insert("end", "-"), borderwidth=3, relief=GROOVE)
-Char_minus.grid(row=2, sticky="n", padx=125)
 Char_three = Button(root, text="3", width=2, command=lambda: inp.insert("end", "3"), borderwidth=3, relief=GROOVE)
 Char_three.grid(row=3, sticky="w", padx=15)
 Char_two = Button(root, text="2", width=2, command=lambda: inp.insert("end", "2"), borderwidth=3, relief=GROOVE)
@@ -76,6 +74,8 @@ Char_divide = Button(root, text="/", width=2, command=lambda: inp.insert("end", 
 Char_divide.grid(row=4, sticky="n", padx=125)
 Char_modulus = Button(root, text="%", width=2, command=lambda: inp.insert("end", "%"), borderwidth=3, relief=GROOVE)
 Char_modulus.grid(row=5, sticky="n", padx=125)
+Char_minus = Button(root, text="-", width=2, command=lambda: inp.insert("end", "-"), borderwidth=3, relief=GROOVE)
+Char_minus.grid(row=2, sticky="n", padx=125)
 Char_exponentiation = Button(root, text="**", width=2, command=lambda: inp.insert("end", "**"), borderwidth=3,
                              relief=GROOVE)
 Char_exponentiation.grid(row=4, sticky="w", padx=75)
