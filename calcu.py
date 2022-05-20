@@ -32,8 +32,6 @@ def result():
         inp.delete(0, "end")
     elif inp.get() == "%":
         inp.delete(0, "end")
-    elif ValueError:
-        inp.delete(0, "end")
 
     else:
         calcres = inp.get()
